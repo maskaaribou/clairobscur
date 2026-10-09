@@ -7,6 +7,10 @@
 	font-display: swap;
 }
 
+.post-main-content:has(.AmaRP) {
+    overflow: visible !important;
+}
+
 .AmaRP {
 	--colorama: #ecc07c;
 	--darkama: #be9c6a;
