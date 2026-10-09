@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poltawski+Nowy:ital,wght@0,400..700;1,400..700&display=swap');
 @font-face {
 	font-family: 'Bethany Elingston';
-	src: url('https://dl.dropbox.com/scl/fi/990ouatcp7rtp8tclq97y/BethanyElingston.woff2?rlkey=sxn4y5yqhcvr2bea8xzoi1o0g&st=7r1fpm63') format('woff2'), url('https://dl.dropbox.com/scl/fi/tx7mz86r216284e5slin1/BethanyElingston.woff?rlkey=o11n8kda0yxnxqfi47p85co6w&st=xtq92iu0') format('woff');
+	src: url('https://raw.githubusercontent.com/maskaaribou/clairobscur/main/BethanyElingston.otf') format('opentype');
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
