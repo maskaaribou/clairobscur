@@ -201,6 +201,7 @@
 	align-items: center;
 	justify-content: flex-end;
 	width: 100%;
+    padding: 10px 0 0;
 }
 
 .AmaRP r tp ti {
@@ -246,11 +247,11 @@
 	text-align: justify;
 	font-family: 'Bethany Elingston';
 	letter-spacing: 2px;
-	font-size: 13px;
+	font-size: 14px;
 	z-index: 3;
 	unicode-bidi: isolate;
 	white-space: pre-wrap;
-	line-height: 150%;
+	line-height: 200%;
 	text-wrap: pretty;
 }
 
