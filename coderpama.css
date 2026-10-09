@@ -1,292 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Poltawski+Nowy:ital,wght@0,400..700;1,400..700&display=swap');
 @font-face {
-    font-family: 'Hatolie';
-    src: url('https://dl.dropbox.com/scl/fi/md99qqvg8lhj2q98bh5jw/Hatolie.woff2?rlkey=lykok9j3uud83opwt6fqi2yxf&st=0qorivci') format('woff2'),
-        url('https://dl.dropbox.com/scl/fi/9fhtsaz3ru40sxjjc05e7/Hatolie.woff?rlkey=kjqhalqomzmgc0q0yx0l1af4g&st=5p88wfbb') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+	font-family: 'Bethany Elingston';
+	src: url('https://dl.dropbox.com/scl/fi/990ouatcp7rtp8tclq97y/BethanyElingston.woff2?rlkey=sxn4y5yqhcvr2bea8xzoi1o0g&st=7r1fpm63') format('woff2'), url('https://dl.dropbox.com/scl/fi/tx7mz86r216284e5slin1/BethanyElingston.woff?rlkey=o11n8kda0yxnxqfi47p85co6w&st=xtq92iu0') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
 }
 
-@font-face {
-    font-family: 'Bethany Elingston';
-    src: url('https://dl.dropbox.com/scl/fi/990ouatcp7rtp8tclq97y/BethanyElingston.woff2?rlkey=sxn4y5yqhcvr2bea8xzoi1o0g&st=7r1fpm63') format('woff2'),
-        url('https://dl.dropbox.com/scl/fi/tx7mz86r216284e5slin1/BethanyElingston.woff?rlkey=o11n8kda0yxnxqfi47p85co6w&st=xtq92iu0') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+.AmaRP {
+	--colorama: #ecc07c;
+	--darkama: #be9c6a;
+	--accentama: #A59BA8;
+	--groupama: #A76376;
+	--gradientama: radial-gradient(circle, var(--colorama) 0%, var(--darkama) 85%);
+	display: flex;
+	background: var(--bg2);
+	width: 850px;
+	margin: auto;
+	border: 10px solid var(--border);
+	position: relative;
+	border-radius: 20px;
+	box-shadow: var(--box-shadow);
+	color: #323232;
 }
 
-.pab_topic_postmessage:has(.FayeRP) {
-    padding: 0;
+.AmaRP:before {
+	content: "";
+	display: block;
+	position: absolute;
+	height: 500px;
+	width: calc(100% - 200px);
+	right: 200px;
+	top: 0px;
+	border-radius: 20px;
+	background: var(--ggradient2);
+	-webkit-mask-image: url(https://i.imgur.com/OfiKlLO.png);
+	-webkit-mask-size: contain;
+	mask-size: contain;
+	mask-position: right;
+	mask-repeat: no-repeat;
+	mix-blend-mode: var(--flowerfilter);
+	opacity: var(--floweropacity);
 }
 
-.pab_topic_postbody:has(.FayeRP) {
-    width: 100%;
-    max-width: 100%;
+.AmaRP:after {
+	content: "";
+	display: block;
+	position: absolute;
+	height: 300px;
+	width: calc(100% - 200px);
+	right: 200px;
+	bottom: 0px;
+	border-radius: 20px;
+	background: var(--ggradient2);
+	-webkit-mask-image: url(https://i.imgur.com/ttz5Kyd.png);
+	-webkit-mask-size: contain;
+	mask-size: contain;
+	mask-position: left;
+	mask-repeat: no-repeat;
+	mix-blend-mode: var(--flowerfilter);
+	opacity: var(--floweropacity);
 }
 
-
-.FayeRP {
-    --black:#151515;
-    --white:#e2f0f2;
-    --gradient:#5E5988;
-    --accent:#a7a1db;
-    --accent2:#e2f0f2;
-    --accent3:#ddc178;
-    display: flex;
-    background-color:var(--black);
-    width:100%;
-    margin: auto;
-    border:2px solid var(--accent);
-    color:var(--white);
-    position: relative;  
-    border-radius: 6px;
+.AmaRP a {
+	color: var(--groupama)
 }
 
-.FayeRP:before{
-    content:"";
-    display: block;
-    position: absolute;
-    height:100%;
-    width:95%;
-    right:180px;
-    top:0px;
-    background-image:url(https://i.imgur.com/4MCo4hW.png);
-    background-size:85%;
-    background-repeat:no-repeat;
-    background-position: top right;
-    opacity:0.7;
-    border-radius: 6px;
+.AmaRP a:hover {
+	color: var(--accentama)
 }
 
-.FayeRP a {
-    color:var(--accent3)
+.AmaRP l {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 200px;
+	background: linear-gradient(-135deg, transparent 65%, var(--accentama) 100%);
+	max-height: 100vh;
+	position: sticky;
+	top: 0;
+	border-radius: 0 20px 20px 0;
+	overflow: hidden;
+	transition: 300ms all;
 }
 
-.FayeRP a:hover {
-    color:var(--accent)
+.AmaRP l x {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-shadow: none;
+	color: var(--darkama);
+	font-weight: 800;
+	flex-direction: column;
+	gap: 20px;
 }
 
-.FayeRP r:after{
-    content:"";
-    display: block;
-    position: absolute;
-    height:100%;
-    width:100%;
-    right:0;
-    top:0;
-    background: linear-gradient(45deg, transparent 65%, var(--gradient) 100%);
-    opacity: 0.6;
+.AmaRP l x tt {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	writing-mode: vertical-rl;
+	text-orientation: mixed;
+	font-family: Ragyola;
+	font-size: 30px;
+	text-align: center;
+	line-height: 100%;
+	transform: rotate(180deg);
+	text-shadow: none;
+	color: var(--darkama);
+	font-weight: 800;
+	flex-direction: column;
 }
 
-.FayeRP l {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width:180px;
-    background: linear-gradient(-135deg, transparent 65%, var(--gradient) 100%);
-    max-height:100vh;
-    position: sticky;
-    top:0;
-    border-radius:0 6px 6px 0;
-    transition:300ms all;
+.AmaRP l x b,
+.AmaRP l x strong {
+	font-size: 20px;
+	color: var(--accentama)
 }
 
-.FayeRP l x {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-    font-family: Hatolie;
-    font-size:60px;
-    text-align: center;
-    line-height: 60%;
-    transform: rotate(180deg);
+.AmaRP l:after {
+	content: "";
+	display: block;
+	width: 100%;
+	background-image: url(https://i.imgur.com/CkU6Cre.gif);
+	background-size: cover;
+	background-position: 52% 50%;
+	height: 100%;
+	position: sticky;
+	top: 0;
+	pointer-events: none;
+	transition: 300ms all;
 }
 
-.FayeRP l:after {
-    content:"";
-    display: block;
-    width:100%;
-    background-image:url(https://cdn.donmai.us/sample/95/bd/__chief_and_female_chief_path_to_nowhere_drawn_by_toho10min__sample-95bdb634745e6ec7a88e30b32d6d1f93.jpg);
-    background-size:cover;
-    background-position: 43% 50%;
-    height:100%;
-    position: sticky;
-    top:0;
-    border-radius:0 6px 6px 0;
-    transition:300ms all;
+.AmaRP l:hover:after {
+	opacity: 0.1
 }
 
-.FayeRP l:hover:after {
-    opacity: 0.3
+.AmaRP l y {
+	height: 50px;
+	width: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: var(--colorama);
+	border-radius: 10px;
+	border: 2px solid var(--border);
+	position: relative;
 }
 
-.FayeRP>r {
-    display: flex;
-    flex:1;
-    padding: 0 30px 30px;
-    flex-direction: column;
-    align-items: center;
-    border-right:2px solid var(--accent);
-    position: relative;
-    border-radius: 6px 0 0 6px
+.AmaRP l y a {
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 300ms all;
+	text-decoration: none;
+	overflow: hidden;
+	padding: 3px 0 0;
 }
 
-.FayeRP r tp {
-    font-family: Hatolie;
-    font-size:60px;
-    text-align:right;
-    color:var(--accent);
-    line-height: 60%;
-    height:300px;
-    font-weight: 600;
-    letter-spacing: 5px;
-    z-index:3;
-    order:1;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    width:100%;
-    margin: 0 0 0 auto;
-    transition:500ms all
+.AmaRP l y a:after {
+	content: "\f9bd";
+	font-size: 40px;
+	font-family: game-icons !important;
+	font-style: normal;
+	font-weight: normal !important;
+	pointer-events: none;
 }
 
-.FayeRP r tp ti {
-    display: flex;
-    height:272px;
-    align-items: center;
+.AmaRP l y an {
+	height: 50px;
+	width: 50px;
+	animation: 2s infinite pulse-gradient;
+	border-radius: 10px;
+	flex-shrink: 0;
+	pointer-events: none;
 }
 
-.FayeRP r tp ti x {
-    border-right:3px solid var(--accent3);
-    padding-right:10px;
+.AmaRP>r {
+	display: flex;
+	flex: 1;
+	padding: 0 30px 30px;
+	flex-direction: column;
+	align-items: center;
+	border-right: 10px solid rgba(var(--gbg2), 0.4);
+	position: relative;
+	border-radius: 20px 0 0 20px
 }
 
-.FayeRP r ti b,.FayeRP r ti strong {
-    color:var(--accent2);
+.AmaRP r tp {
+	text-align: right;
+	line-height: 100%;
+	height: 200px;
+	font-weight: 800;
+	z-index: 3;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	width: 100%;
 }
 
-.FayeRP:has(pk:hover) tp {
-    padding-bottom:120px
+.AmaRP r tp ti {
+	font-family: Ragyola;
+	font-size: 30px;
+	display: flex;
+	align-items: center;
+	text-transform: lowercase;
+	background: rgba(255, 255, 255, 0.5);
+	height: max-content;
 }
 
-.FayeRP r rp {
-    display: block;
-    width:100%;
-    text-align:justify;
-    font-family: 'Bethany Elingston';
-    letter-spacing: 2px;
-    font-size:14px;
-    z-index:3;
-    text-shadow: 1px 1px 0px var(--black);
-    order:3;
+.AmaRP r tp ti x {
+	border-right: 3px solid var(--accentama);
+	padding: 10px 10px 2px;
+	line-height: 80%;
+	color: var(--accentama);
+	display: flex;
+	flex-direction: column;
 }
 
-.FayeRP r rp f,
-.FayeRP r rp pnj {
-    display: block;
-    width: 100%;
-    position: relative;
-    z-index: 1;
-    font-weight: bold;
-    border-left:3px solid var(--accent2);
-    padding: 0 0 0 10px;
-    position: relative;
-	margin: 0 0 0 42px;
-	min-height:31px;
-	width: calc(100% - 42px);
+.AmaRP r ti b,
+.AmaRP r ti strong {
+	font-size: 55px;
+	background: var(--gradientama) !important;
+	-webkit-background-clip: text !important;
+	background-clip: text !important;
+	color: transparent !important;
+	text-shadow: none;
+	line-height: 100%;
+}
+
+.AmaRP r ti i {
+	font-size: 15px;
+	font-style: normal;
+	color: var(--groupama);
+	line-height: 100%;
+}
+
+.AmaRP r rp {
+	display: block;
+	width: 100%;
+	text-align: justify;
+	font-family: 'Bethany Elingston';
+	letter-spacing: 2px;
+	font-size: 13px;
+	z-index: 3;
+	unicode-bidi: isolate;
+	white-space: pre-wrap;
+	line-height: 150%;
+	text-wrap: pretty;
+}
+
+.AmaRP r rp * {
+	font-size: inherit!important;
+	padding: 0;
+	line-height: inherit!important;
+	letter-spacing: inherit!important;
+}
+
+.AmaRP r rp f,
+.AmaRP r rp pnj {
+	display: block;
+	position: relative;
+	z-index: 1;
+	font-weight: bold;
+	border-left: 3px solid var(--accentama);
+	position: relative;
+	margin: 0 0 -10px 0;
+	width: 100%;
 	align-content: center;
-    color:var(--accent)
+	color: var(--darkama);
+	background: rgba(255, 255, 255, 0.5);
+	padding: 5px 6px 5px 8px;
 }
 
-.FayeRP r rp pnj {color:var(--accent3)}
-
-.FayeRP r rp f:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -44px;
-    color: #2a2a2a;
-    width: 27px;
-    height: 100%;
-    text-align: right;
-    background-image: url(https://i.imgur.com/PRFgl9r.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 3px;
-    filter: drop-shadow(2px 0 0 var(--accent3))
-            drop-shadow(-2px 0 0 var(--accent3))
-            drop-shadow(0 2px 0 var(--accent3))
-            drop-shadow(0 -2px 0 var(--accent3))
+.AmaRP r rp pnj {
+	color: var(--accentama)
 }
 
-.FayeRP r rp f#fr:before {
-    background-image:url(https://i.imgur.com/YLvmK5A.png);
-}
-.FayeRP r rp f#mo:before {
-    background-image:url(https://i.imgur.com/CWhDzlF.png);
-}
-.FayeRP r rp f#jp:before {
-    background-image:url(https://i.imgur.com/JxFzpKn.png);
-}
-.FayeRP r rp f#en:before {
-    background-image:url(https://i.imgur.com/PRFgl9r.png);
+.AmaRP r rp u {
+	background: var(--gradientama) no-repeat bottom left / 100% 2px !important;
 }
 
-.FayeRP r rp u {
-    text-decoration:underline;
-    border: none;
+.AmaRP *::selection {
+	background: var(--accentama)!important;
+	color: white!important;
 }
 
-.FayeRP r rp u,.FayeRP r rp strike {
-    text-decoration-color:var(--accent);
+.AmaRP ld {
+	display: block;
+	width: 100%;
+	text-align: right;
+	margin: 10px 0 0;
+	font-family: Ragyola;
+	font-size: 17px;
+	font-weight: 800;
+	opacity: 0.7
 }
 
-.FayeRP *::selection {
-	background:var(--gradient)!important;
-	color:var(--white)!important;
+.AmaRP ld:before {
+	content: "— "
 }
 
-.FayeRP hr {
-    display: block;
-    background: var(--accent3);
-    height: 3px;
-    flex:1;
-    margin: 14px 0px 3px 15px;
+.AmaRP hr {
+	display: block;
+	background: var(--accentama);
+	height: 3px;
+	flex: 1;
+	margin: 14px 0px 3px 15px;
 }
 
-.FayeRP bt {
-    order:4;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top:30px;
-    width:100%;
+.AmaRP bt {
+	order: 4;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 30px;
+	width: 100%;
 }
 
-.FayeRP bt:before {
-    content: "hrp";
-    font-family: 'Hatolie', serif;
-    font-size: 40px;
-    color: var(--accent);
-    line-height: 80%;
-    display: block;
+.AmaRP bt:before {
+	content: "hrp";
+	font-family: 'Ragyola', serif;
+	font-size: 40px;
+	color: var(--groupama);
+	line-height: 80%;
+	display: block;
+	margin: 0 0 10px
 }
 
-.FayeRP hrp {
-    display: block;
-    text-align: justify;
-    font-family: 'Bethany Elingston';
-    letter-spacing: 2px;
-    font-size:13px;
-    text-shadow: 1px 1px 0px var(--black);
-    width:100%;
+.AmaRP hrp {
+	display: block;
+	text-align: justify;
+	font-family: 'Bethany Elingston';
+	letter-spacing: 2px;
+	font-size: 12px;
+	width: 100%;
 }
 
-.FayeRP bt:has(hrp.hidden) {
-    display: none
+.AmaRP bt:has(hrp.hidden) {
+	display: none
 }
-
