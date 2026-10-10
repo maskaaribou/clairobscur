@@ -45,6 +45,7 @@
 	mask-repeat: no-repeat;
 	mix-blend-mode: var(--flowerfilter);
 	opacity: var(--floweropacity);
+	pointer-events:none
 }
 
 .AmaRP:after {
@@ -64,6 +65,7 @@
 	mask-repeat: no-repeat;
 	mix-blend-mode: var(--flowerfilter);
 	opacity: var(--floweropacity);
+	pointer-events:none
 }
 
 .AmaRP a {
@@ -151,6 +153,7 @@
 	border-radius: 10px;
 	border: 2px solid var(--border);
 	position: relative;
+	animation: 2s infinite pulse-gradient;
 }
 
 .AmaRP l y a {
@@ -172,15 +175,6 @@
 	font-family: game-icons !important;
 	font-style: normal;
 	font-weight: normal !important;
-	pointer-events: none;
-}
-
-.AmaRP l y an {
-	height: 50px;
-	width: 50px;
-	animation: 2s infinite pulse-gradient;
-	border-radius: 10px;
-	flex-shrink: 0;
 	pointer-events: none;
 }
 
@@ -255,8 +249,9 @@
 	z-index: 3;
 	unicode-bidi: isolate;
 	white-space: pre-wrap;
-	line-height: 200%;
+	line-height: 150%;
 	text-wrap: pretty;
+    transition: 600ms all
 }
 
 .AmaRP r rp * {
@@ -351,4 +346,94 @@
 
 .AmaRP bt:has(hrp.hidden) {
 	display: none
+}
+
+.AmaRP r warning {
+    display: flex;
+    gap:10px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 0 30px;
+    flex-direction: column;
+    border: 2px solid var(--border);
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.5);
+    font-family: 'Bethany Elingston';
+    letter-spacing: 2px;
+    line-height: 150%;
+    font-size: 14px;
+}
+
+.AmaRP r warning:before {
+    content:"Ce texte aborde les thèmes suivants:";
+    display: block;
+    font-weight: bold;
+}
+
+.AmaRP input {
+    display: none;
+}
+
+.AmaRP label {  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px 3px;
+    border-radius: 10px;
+    background: var(--colorama);
+    border: 2px solid var(--border);
+    font-family: Ragyola;
+    font-weight: bold;
+    text-shadow: none;
+    font-size: 17px;
+    animation: 2s infinite pulse-gradient;
+    cursor: pointer;
+}
+
+.AmaRP label:before {
+    content:"afficher le texte";
+}
+
+.AmaRP label:after {
+    content:"cacher le texte";
+    position: absolute;
+    width:95%;
+    text-align: center;
+    background: var(--colorama);
+    opacity: 0;
+    transition:300ms all
+}
+
+.AmaRP input:checked+label:after {
+    opacity: 1;
+}
+
+.AmaRP:has(input:not(:checked)) {
+    r rp {
+        font-size: 0;
+    }
+    r d, r pnj {
+        padding: 0
+    }
+}
+
+@keyframes pulse-gradient {
+  0% {
+    -webkit-transform: scale(0.95);
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(var(--gbg1), 0.7);
+  }
+
+  70% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(var(--gbg1), 0);
+  }
+
+  100% {
+    -webkit-transform: scale(0.95);
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(var(--gbg1), 0);
+  }
 }
