@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@font-face {
+	font-family: 'Thaloria Regular';
+	src: url('https://raw.githubusercontent.com/maskaaribou/clairobscur/main/Thaloria_Regular.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+.CeijaRP {
+	--color: #9d8ac6;
+	--color2: #c6ac95;
+	display: block;
+	position: relative;
+	width: 680px;
+	margin: auto;
+	padding: 40px 0 0;
+	filter: drop-shadow(var(--box-shadow));
+}
+
+.CeijaRP co {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 600px;
+	width: 500px;
+	background: url(https://i.imgur.com/WUmJTZU.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: top right;
+	z-index: 4;
+	pointer-events: none;
+}
+
+.CeijaRP cob {
+	display: block;
+	position: absolute;
+	bottom: 10px;
+	left: -20px;
+	height: 400px;
+	width: 400px;
+	background: url(https://i.imgur.com/KcCdj7T.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom left;
+	z-index: 4;
+	pointer-events: none;
+}
+
+.CeijaRP ctrp {
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	height: max-content;
+	padding: 0 0 10px;
+}
+
+.CeijaRP tp {
+	display: flex;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	height: 600px;
+	width: 100%;
+	background: url(https://plus.unsplash.com/premium_photo-1669392159115-696932b8529c?q=80&w=1731&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D);
+	background-size: cover;
+	background-position: center;
+	flex-direction: column;
+	border-radius: 100px 100% 20px 20px;
+	border: 10px solid var(--border);
+	border-bottom: 0;
+	overflow: hidden;
+	margin: 0 0 -60px
+}
+
+.CeijaRP tp:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	height: 90%;
+	width: 100%;
+	background: linear-gradient(0deg, var(--bg2) 0%, transparent 20%);
+	pointer-events: none;
+}
+
+.CeijaRP tp:after {
+	content: "";
+	display: block;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-image: url(https://i.imgur.com/7NKWiaS.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	pointer-events: none;
+	filter: drop-shadow(15px 15px 3px rgba(0, 0, 0, 0.3));
+	z-index: 3;
+	top: 0;
+}
+
+.CeijaRP ti {
+	font-size: 60px;
+	display: block;
+	z-index: 2;
+	text-align: left;
+	font-family: "Thaloria Regular";
+	font-weight: bold;
+	text-shadow: none;
+	color: var(--bg2);
+	text-shadow: inset (2px 2px 5px black);
+	line-height: 100%;
+	width: 50%;
+	position: relative;
+	left: -110px;
+	top: -60px;
+}
+
+.CeijaRP warning {
+	display: flex;
+	gap: 10px;
+	padding: 20px;
+	flex-direction: column;
+	border: 10px solid var(--border);
+	border-top: 0;
+	border-bottom: 0;
+	justify-content: center;
+	align-items: center;
+	background: var(--bg2);
+	font-family: 'Playfair Display';
+	letter-spacing: 2px;
+	line-height: 150%;
+	font-size: 14px;
+	z-index: 2
+}
+
+.CeijaRP warning.hidden {
+	display: none;
+}
+
+.CeijaRP warning:before {
+	content: "Ce texte aborde les thèmes suivants:";
+	display: block;
+	font-weight: bold;
+}
+
+.CeijaRP input {
+	display: none;
+}
+
+.CeijaRP label {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-family: Ragyola;
+	font-weight: bold;
+	text-shadow: none;
+	font-size: 17px;
+	cursor: pointer;
+	animation: 2s infinite pulse-gradient;
+	padding: 5px 10px 3px;
+	border-radius: 10px;
+	background: var(--ggradient2);
+	border: 2px solid var(--border);
+	width: 200px;
+}
+
+.CeijaRP label:before {
+	content: "afficher le texte";
+	text-align: center;
+	opacity: 0;
+	transition: 300ms all
+}
+
+.CeijaRP label:after {
+	content: "cacher le texte";
+	position: absolute;
+	text-align: center;
+	opacity: 1;
+	transition: 300ms all
+}
+
+.CeijaRP input:checked+label:before {
+	opacity: 1;
+}
+
+.CeijaRP input:checked+label:after {
+	opacity: 0;
+}
+
+.CeijaRP:has(input:checked) {
+	rp {
+		font-size: 0;
+		padding: 0;
+	}
+	rp c,
+	rp pnj {
+		padding: 0
+	}
+}
+
+@keyframes pulse-gradient {
+	0% {
+		-webkit-transform: scale(0.95);
+		transform: scale(1);
+		box-shadow: 0 0 0 0 rgba(var(--gbg1), 0.7);
+	}
+	70% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(var(--gbg1), 0);
+	}
+	100% {
+		-webkit-transform: scale(0.95);
+		transform: scale(1);
+		box-shadow: 0 0 0 0 rgba(var(--gbg1), 0);
+	}
+}
+
+.CeijaRP rp {
+	display: block;
+	border: 10px solid var(--border);
+	border-bottom: 0;
+	border-top: 0;
+	border-radius: 0;
+	z-index: 2;
+	background: var(--bg2);
+	padding: 0 50px 50px;
+	font-family: "Playfair Display";
+	text-align: justify;
+	font-size: 14px;
+	unicode-bidi: isolate;
+	line-height: 150%;
+	white-space: pre-wrap;
+	text-wrap: pretty;
+	transition: 600ms;
+}
+
+.CeijaRP:has(warning.hidden) rp {
+	padding: 50px;
+	font-size: 14px;
+}
+
+.CeijaRP ld {
+	display: block;
+	border: 10px solid var(--border);
+	border-bottom: 0;
+	border-top: 0;
+	border-radius: 0;
+	z-index: 2;
+	background: var(--bg2);
+	padding: 0 50px 50px;
+	font-family: "Ragyola";
+	text-align: right;
+	font-size: 14px;
+	unicode-bidi: isolate;
+	line-height: 150%;
+	font-weight: bold;
+}
+
+.CeijaRP ld:before {
+	content: "— "
+}
+
+.CeijaRP:has(hrp.hidden) ld {
+	border-radius: 0 0 20px 20px;
+	border-bottom: 10px solid var(--border);
+}
+
+.CeijaRP rp * {
+	font-size: inherit!important;
+	padding: 0;
+	line-height: inherit!important;
+	letter-spacing: inherit!important;
+}
+
+.CeijaRP rp c,
+.CeijaRP rp pnj {
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	font-weight: bold;
+	position: relative;
+	width: 100%;
+	align-content: center;
+	color: var(--color);
+}
+
+.CeijaRP rp c:before,
+.CeijaRP rp pnj:before {
+	content: "— ";
+}
+
+.CeijaRP rp pnj,
+.CeijaRP rp i {
+	color: var(--color2)
+}
+
+.CeijaRP *::selection {
+	background: var(--color)!important;
+	color: white!important;
+}
+
+.CeijaRP hrp {
+	display: block;
+	border-radius: 0 0 20px 20px;
+	border: 10px solid var(--border);
+	border-top: 0;
+	z-index: 2;
+	background: var(--bg2);
+	padding: 0 130px 50px 130px;
+	font-family: "Playfair Display";
+	text-align: justify;
+	font-size: 14px;
+	unicode-bidi: isolate;
+	line-height: 150%;
+	white-space: pre-wrap;
+	text-wrap: pretty;
+}
+
+.CeijaRP hrp:before {
+	content: "HRP : ";
+	font-family: Ragyola;
+	text-shadow: none;
+	font-size: 17px;
+	color: var(--color);
+	font-weight: bold;
+}
+
+.CeijaRP hrp.hidden {
+	display: none;
+}
