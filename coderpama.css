@@ -268,18 +268,22 @@
 
 .AmaRP r rp d,
 .AmaRP r rp pnj {
-	display: block;
+	display: inline-block;
 	position: relative;
 	z-index: 1;
 	font-weight: bold;
 	border-left: 3px solid var(--accentama);
 	position: relative;
-	margin: 0 0 -10px 0;
+	margin: -5px 0 -5px 0;
 	width: 100%;
 	align-content: center;
 	color: var(--darkama);
 	background: rgba(255, 255, 255, 0.5);
 	padding: 5px 6px 5px 8px;
+}
+
+.AmaRP r rp d:before, .AmaRP r rp pnj:before {
+    content:"— ";
 }
 
 .AmaRP r rp pnj {
@@ -299,7 +303,7 @@
 	display: block;
 	width: 100%;
 	text-align: right;
-	margin: 10px 0 0;
+    margin: 30px 0 0;
 	font-family: Ragyola;
 	font-size: 17px;
 	font-weight: 800;
