@@ -17,6 +17,7 @@
 	padding: 40px 0 0;
 	filter: drop-shadow(var(--box-shadow));
 	color: #323232;
+	text-shadow:none
 }
 
 .CeijaRP co {
