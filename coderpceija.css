@@ -9,13 +9,14 @@
 
 .CeijaRP {
 	--color: #9d8ac6;
-	--color2: #c6ac95;
+	--color2: #bd9b7d;
 	display: block;
 	position: relative;
 	width: 680px;
 	margin: auto;
 	padding: 40px 0 0;
 	filter: drop-shadow(var(--box-shadow));
+	color: #323232;
 }
 
 .CeijaRP co {
@@ -132,7 +133,7 @@
 	font-family: 'Playfair Display';
 	letter-spacing: 2px;
 	line-height: 150%;
-	font-size: 14px;
+	font-size: 16px;
 	z-index: 2
 }
 
@@ -231,7 +232,7 @@
 	padding: 0 50px 50px;
 	font-family: "Playfair Display";
 	text-align: justify;
-	font-size: 14px;
+	font-size: 16px;
 	unicode-bidi: isolate;
 	line-height: 150%;
 	white-space: pre-wrap;
@@ -241,7 +242,7 @@
 
 .CeijaRP:has(warning.hidden) rp {
 	padding: 50px;
-	font-size: 14px;
+	font-size: 16px;
 }
 
 .CeijaRP ld {
@@ -255,7 +256,7 @@
 	padding: 0 50px 50px;
 	font-family: "Ragyola";
 	text-align: right;
-	font-size: 14px;
+	font-size: 17px;
 	unicode-bidi: isolate;
 	line-height: 150%;
 	font-weight: bold;
@@ -314,7 +315,7 @@
 	padding: 0 130px 50px 130px;
 	font-family: "Playfair Display";
 	text-align: justify;
-	font-size: 14px;
+	font-size: 16px;
 	unicode-bidi: isolate;
 	line-height: 150%;
 	white-space: pre-wrap;
